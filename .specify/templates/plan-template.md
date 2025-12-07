@@ -31,7 +31,14 @@
 
 *GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
 
-[Gates determined based on constitution file]
+- [ ] **Spec-First**: Does this plan originate from a clear, approved specification in `specs/`?
+- [ ] **Reproducible Workflow**: Does the plan rely exclusively on the established GitHub-native workflow (spec -> generate -> build -> deploy)?
+- [ ] **AI-Assisted**: Is the role of AI in generation clearly defined, with human review as the final gate?
+- [ ] **Standards Adherence**:
+    - [ ] Does the plan use the official Spec-Kit Plus template and Docusaurus 3.x?
+    - [ ] Are there any new dependencies or plugins being introduced? (Constraint violation)
+    - [ ] Does the plan involve any manual editing of the `/docs` directory? (Constraint violation)
+- [ ] **Deployment**: Is the deployment target exclusively GitHub Pages?
 
 ## Project Structure
 

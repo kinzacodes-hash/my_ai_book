@@ -1,0 +1,170 @@
+:root {
+  --ifm-color-primary: #00F0FF; /* Neon Cyan - primary accent */
+  --ifm-color-primary-dark: #00D0E0;
+  --ifm-color-primary-darker: #00B0C0;
+  --ifm-color-primary-darkest: #0090A0;
+  --ifm-color-primary-light: #33FFFF;
+  --ifm-color-primary-lighter: #66FFFF;
+  --ifm-color-primary-lightest: #99FFFF;
+
+  --ifm-color-primary-contrast-background: #0A192F; /* Deep Blue - primary background */
+  --ifm-background-color: #0A192F; /* Deep Blue - general background */
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --ifm-color-secondary: #8892B0; /* Slate Grey - secondary text, borders */
+  --ifm-heading-color: #FFFFFF; /* White for headings */
+  --ifm-text-color: #E6E6E6; /* Light grey for general text */
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #00F0FF; /* Neon Cyan - primary accent */
+  --ifm-color-primary-dark: #00D0E0;
+  --ifm-color-primary-darker: #00B0C0;
+  --ifm-color-primary-darkest: #0090A0;
+  --ifm-color-primary-light: #33FFFF;
+  --ifm-color-primary-lighter: #66FFFF;
+  --ifm-color-primary-lightest: #99FFFF;
+
+  --ifm-color-primary-contrast-background: #0A192F; /* Deep Blue - primary background */
+  --ifm-background-color: #0A192F; /* Deep Blue - general background */
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-color-secondary: #8892B0; /* Slate Grey - secondary text, borders */
+  --ifm-heading-color: #FFFFFF; /* White for headings */
+  --ifm-text-color: #E6E6E6; /* Light grey for general text */
+}
+
+/* Custom styles for the landing page sections */
+.hero-banner {
+  background-color: var(--ifm-background-color);
+  padding: 4rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  color: var(--ifm-heading-color);
+}
+
+.hero-banner h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--ifm-heading-color);
+}
+
+.hero-banner p {
+  font-size: 1.5rem;
+  color: var(--ifm-text-color);
+  max-width: 800px;
+  margin: 0 auto 2rem;
+}
+
+.hero-button {
+  background-color: var(--ifm-color-primary);
+  color: var(--ifm-color-primary-contrast-background);
+  font-size: 1.2rem;
+  padding: 0.8rem 2rem;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border: none;
+}
+
+.hero-button:hover {
+  background-color: var(--ifm-color-primary-light);
+  color: var(--ifm-color-primary-contrast-background);
+  text-decoration: none;
+}
+
+.features-section {
+  background-color: #0A192F; /* Deep Blue */
+  padding: 4rem 0;
+  color: var(--ifm-heading-color);
+  text-align: center;
+}
+
+.features-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: var(--ifm-heading-color);
+}
+
+.feature-card {
+  background-color: #1a2a40; /* Slightly lighter deep blue */
+  border-radius: 10px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+  height: 100%;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.feature-card h3 {
+  color: var(--ifm-color-primary);
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+.feature-card p {
+  color: var(--ifm-text-color);
+  font-size: 1.1rem;
+}
+
+.modules-section {
+  background-color: #0A192F; /* Deep Blue */
+  padding: 4rem 0;
+  color: var(--ifm-heading-color);
+  text-align: center;
+}
+
+.modules-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: var(--ifm-heading-color);
+}
+
+.module-card {
+  background-color: #1a2a40; /* Slightly lighter deep blue */
+  border-radius: 10px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.module-card:hover {
+  transform: translateY(-5px);
+  text-decoration: none;
+}
+
+.module-card h3 {
+  color: var(--ifm-color-primary);
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.module-card p {
+  color: var(--ifm-text-color);
+  font-size: 1rem;
+  flex-grow: 1;
+}
+
+.module-card-link {
+  display: block;
+  color: var(--ifm-color-primary);
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.module-card-link:hover {
+  text-decoration: underline;
+}

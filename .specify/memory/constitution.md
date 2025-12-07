@@ -1,55 +1,68 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+<!--
+---
+Sync Impact Report
+---
+Version change: 0.0.0 → 1.0.0
+Modified principles:
+- PRINCIPLE_1: 100% spec-first
+- PRINCIPLE_2: AI-assisted, human-in-the-loop
+- PRINCIPLE_3: Fully reproducible, GitHub-native workflow
+- PRINCIPLE_4: (removed)
+- PRINCIPLE_5: (removed)
+- PRINCIPLE_6: (removed)
+Added sections:
+- Key Standards and Constraints
+- Success Criteria and Accountability
+Removed sections:
+- SECTION_2_NAME
+- SECTION_3_NAME
+Templates requiring updates:
+- ✅ .specify/templates/plan-template.md
+- ✅ .specify/templates/spec-template.md
+- ✅ .specify/templates/tasks-template.md
+Follow-up TODOs: None
+-->
+# Humanoid Robotics Book (AI/Spec-Driven Creation) Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### I. 100% Spec-First
+All content, structure, and features are driven by the living Spec-Kit Plus specification.
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### II. AI-Assisted, Human-in-the-Loop
+Claude Code is the primary generator; every change is reviewed and merged by the human author.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### III. Fully Reproducible, GitHub-Native Workflow
+The entire workflow from specification to live site is reproducible and managed within GitHub. This includes spec changes, content generation, application builds, and deployment.
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+## Key Standards and Constraints
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### Key Standards
+- **Spec-Kit Plus**: All work must adhere to the official Spec-Kit Plus template.
+- **Docusaurus**: The project uses Docusaurus 3.x with the provided configuration.
+- **Builds**: Builds must be clean and successful, completing in under 8 minutes.
+- **Performance**: The live site must achieve Lighthouse scores of 90 or higher across Performance, Accessibility, Best Practices, and SEO.
+- **Quality**: There must be zero broken links and zero console errors in the production deployment.
 
-### [PRINCIPLE_6_NAME]
+### Constraints
+- **Deployment**: Deployment is restricted to GitHub Pages only.
+- **Dependencies**: No plugins or dependencies outside the official Spec-Kit Plus template are permitted.
+- **Workflow**: Manual editing of the `/docs` directory is forbidden; all changes must originate from the spec-to-generation cycle.
 
+## Success Criteria and Accountability
 
-[PRINCIPLE__DESCRIPTION]
+### Success Criteria
+- The entire book must be regenerable from the Spec-Kit Plus specification without errors.
+- The `npm run deploy` command must work on any clean clone of the repository.
+- The live GitHub Pages site must be publicly accessible, fast, and fully traceable to the specification.
+- Every merge into the main branch must be approved by a human, with a complete audit trail in the Git history.
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
-
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
-
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
-
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+### Accountability
+- The human author is the sole approver for all content and merges.
+- Any deviation from this constitution requires a formal amendment to the specification before implementation.
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+This constitution is the authoritative document governing the project. All development activities, reviews, and deployments must comply with its principles. Amendments require a documented proposal, review, and approval, followed by a migration plan if necessary.
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Version**: 1.0.0 | **Ratified**: 2025-12-07 | **Last Amended**: 2025-12-07
